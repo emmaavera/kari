@@ -1,0 +1,55 @@
+bt2600-16
+Mon May  1 12:40:49 EDT 2017
+qchem job: kari_fsm_solv_with_onsager.qcin - Running at Mon May  1 12:40:49 EDT 2017
+kari_fsm_solv_with_onsager.qcin
+You are running Q-Chem version: 4.3
+withsave === 1
+
+#
+# job setting
+#
+local host:  bt2600-16
+current dir: /data/emavera/FSM_solv/with_onsager
+input file:  kari_fsm_solv_with_onsager.qcin
+output file: kari_fsm_solv_with_onsager.qcin.out
+nprocs     : 1
+nthreads   : 1
+#
+# qchem installation setting
+#
+QC:          /programs/x86_64/lib/qchem-4.3.2
+QCAUX:       /programs/x86_64/lib/qchem-4.3.2/qcaux
+QCPROG:      /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe
+QCPROG_S:    /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe_s
+PARALLEL:    -DPARALLEL
+QCMPI:       mpich
+#
+# qchem directory setting
+#
+qcrun:       kari_fsm_solv_with_onsager.qcin
+QCSCRATCH:   /data/scratch/qchem-scratch
+QCLOCALSCR:  /tmp
+QCTMPDIR:    /tmp
+QCFILEPREF:  /tmp/kari_fsm_solv_with_onsager.qcin
+QCSAVEDIR:   /data/scratch/qchem-scratch/kari_fsm_solv_with_onsager.qcin
+workdirs:    /tmp/kari_fsm_solv_with_onsager.qcin
+workdir0:    /tmp/kari_fsm_solv_with_onsager.qcin
+partmpdirs =  
+#
+# parallel setting
+#
+QCRSH:           ssh
+QCMPI:           mpich
+QCMPIRUN:        /programs/x86_64/lib/qchem-4.3.2/bin/mpi/mpirun_qchem
+QCMACHINEFILE:   /var/spool/torque/aux//114826.vali
+bt2600-16
+
+#
+# env setting
+#
+exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+copy savedir ...
+
+real	327m15.095s
+user	254m26.359s
+sys	18m12.889s

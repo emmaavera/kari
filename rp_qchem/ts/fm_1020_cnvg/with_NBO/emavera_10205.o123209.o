@@ -1,0 +1,55 @@
+bt2600-04
+Wed Jun 14 12:09:26 EDT 2017
+qchem job: irc_reac_nbo_with_charge.qcin - Running at Wed Jun 14 12:09:27 EDT 2017
+irc_reac_nbo_with_charge.qcin
+You are running Q-Chem version: 4.3
+withsave === 1
+
+#
+# job setting
+#
+local host:  bt2600-04
+current dir: /data/emavera/rp_qchem/ts/fm_1020_cnvg/with_NBO
+input file:  irc_reac_nbo_with_charge.qcin
+output file: irc_reac_nbo_with_charge.qcin.out
+nprocs     : 1
+nthreads   : 1
+#
+# qchem installation setting
+#
+QC:          /programs/x86_64/lib/qchem-4.3.2
+QCAUX:       /programs/x86_64/lib/qchem-4.3.2/qcaux
+QCPROG:      /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe
+QCPROG_S:    /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe_s
+PARALLEL:    -DPARALLEL
+QCMPI:       mpich
+#
+# qchem directory setting
+#
+qcrun:       irc_reac_nbo_with_charge.qcin
+QCSCRATCH:   /data/scratch/qchem-scratch
+QCLOCALSCR:  /tmp
+QCTMPDIR:    /tmp
+QCFILEPREF:  /tmp/irc_reac_nbo_with_charge.qcin
+QCSAVEDIR:   /data/scratch/qchem-scratch/irc_reac_nbo_with_charge.qcin
+workdirs:    /tmp/irc_reac_nbo_with_charge.qcin
+workdir0:    /tmp/irc_reac_nbo_with_charge.qcin
+partmpdirs =  
+#
+# parallel setting
+#
+QCRSH:           ssh
+QCMPI:           mpich
+QCMPIRUN:        /programs/x86_64/lib/qchem-4.3.2/bin/mpi/mpirun_qchem
+QCMACHINEFILE:   /var/spool/torque/aux//123209.vali
+bt2600-04
+
+#
+# env setting
+#
+exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+copy savedir ...
+
+real	1m54.456s
+user	1m9.447s
+sys	0m10.026s

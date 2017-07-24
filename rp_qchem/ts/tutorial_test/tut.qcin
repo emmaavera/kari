@@ -1,0 +1,64 @@
+$comment
+Optimize the saddle point structure in the C7eq->C7ax conformational change of alanine dipeptide
+Job 1: Hessian evaluation.  This can sometimes be done at a lower level of theory
+Job 2: Saddle point optimization.   Note that the Hessian from a previous calculation is read in.
+Job 3: Hessian evaluation and frequency calculation.  This confirms that we indeed reach a saddle point.
+$end
+
+$molecule
+0  1
+C 3.19498   0.55128   0.54366
+H 3.59029   1.40911   -0.01245
+H 3.74099   -0.34822  0.24677
+H 3.38006   0.75469   1.60271
+C 1.69020   0.51356   0.33819
+O 1.02580   1.51015   0.73682
+N 1.17338   -0.59609  -0.27839
+H 1.85193   -1.30016  -0.50478
+C -0.20809  -1.03310  -0.71192
+H -0.12609  -1.16570  -1.80171
+C -0.48943  -2.42344  -0.09157
+H -0.58992  -2.34798  0.99546
+H -1.42342  -2.81371  -0.50398
+H 0.31625   -3.13252  -0.31951
+C -1.49990  -0.15827  -0.57196
+O -2.55539  -0.70393  -1.01112
+N -1.43599  1.07807   -0.04307
+H -0.54314  1.41943   0.29195
+C -2.62334  1.93704   0.09902
+H -2.54722  2.47568   1.05202
+H -3.52914  1.33873   0.08717
+H -2.67451  2.67852   -0.70846
+$end
+
+$rem
+jobtype          freq
+exchange         hf
+basis            6-31+G(d)
+$end
+
+@@@
+
+$molecule
+READ
+$end
+
+$rem
+jobtype          ts
+exchange         hf
+basis            6-31+G(d)
+geom_opt_hessian read
+geom_opt_maxcyc  100
+$end
+
+@@@
+
+$molecule
+READ
+$end
+
+$rem
+jobtype          freq
+exchange         hf
+basis            6-31+G(d)
+$end

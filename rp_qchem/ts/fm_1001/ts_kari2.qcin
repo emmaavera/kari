@@ -1,0 +1,56 @@
+$comment
+Title
+$end
+
+$molecule
+   -2 1
+   C        3.457         -1.303          2.639
+   O        4.585         -1.568          2.152
+   O        3.156         -1.669          3.838
+   C        2.431         -0.611          1.760
+   O        2.048         -1.964          0.324
+   C        1.323         -0.391          2.447
+   O        2.490          0.068          0.516
+   C        1.481          0.694          0.023
+   H        3.695          0.184         -0.328
+   H        3.485         -0.146         -1.481
+   H        4.489         -0.484          0.104
+   C        4.132          1.211         -0.539
+   H        1.160         -1.639         -0.299
+   H        1.810         -2.780          1.053
+   H        3.012         -2.165         -0.257
+$end
+
+$rem
+   JOBTYPE FREQ
+   EXCHANGE HF
+   BASIS 6-31+G(d)
+   GUI=2
+$end
+
+@@@
+
+$molecule
+READ
+$end
+
+$rem
+jobtype          TS
+exchange         HF
+basis            6-31+G(d)
+geom_opt_hessian READ
+geom_opt_maxcyc  100
+$end
+
+@@@
+
+$molecule
+READ
+$end
+
+$rem
+jobtype          FREQ
+exchange         HF
+basis            6-31+G(d)
+pdb_print 2
+$end

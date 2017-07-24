@@ -1,0 +1,28 @@
+FINAL ENERGY
+Emma Bernstein 4/26/17
+
+----------
+NO SOLVENT
+----------
+HF R =  Final energy is   -492.177054284929 
+HF P =  Final energy is   -492.194338103985 
+CHANGE IN ENERGY = -0.01728381905
+
+B3LYP R =  Final energy is   -495.001649380297     
+B3LYP P =  Final energy is   -495.018430234804       
+CHANGE IN ENERGY = -0.0167808545
+
+*USE B3LYP*
+
+-------
+SOLVENT
+-------
+HF R =  Final energy is  -492.211906507168 
+HF P =  Final energy is  -492.229171925527
+CHANGE IN ENERGY = -0.01726541835
+
+B3LYP R =  Final energy is -495.036493164457
+B3LYP P =  Final energy is -495.053261935611
+CHANGE IN ENERGY = -0.01676877115
+
+*USE B3LYP*

@@ -1,0 +1,56 @@
+bt2600-16
+Tue Apr 18 11:13:20 EDT 2017
+qchem job: reac_f.qcin - Running at Tue Apr 18 11:13:20 EDT 2017
+reac_f.qcin
+You are running Q-Chem version: 4.3
+withsave === 1
+
+#
+# job setting
+#
+local host:  bt2600-16
+current dir: /data/emavera/rp_qchem/nosolvent/prod/B3lyp
+input file:  reac_f.qcin
+output file: reac_f.qcin.out
+nprocs     : 1
+nthreads   : 1
+#
+# qchem installation setting
+#
+QC:          /programs/x86_64/lib/qchem-4.3.2
+QCAUX:       /programs/x86_64/lib/qchem-4.3.2/qcaux
+QCPROG:      /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe
+QCPROG_S:    /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe_s
+PARALLEL:    -DPARALLEL
+QCMPI:       mpich
+#
+# qchem directory setting
+#
+qcrun:       reac_f.qcin
+QCSCRATCH:   /data/scratch/qchem-scratch
+QCLOCALSCR:  /tmp
+QCTMPDIR:    /tmp
+QCFILEPREF:  /tmp/reac_f.qcin
+QCSAVEDIR:   /data/scratch/qchem-scratch/reac_f.qcin
+workdirs:    /tmp/reac_f.qcin
+workdir0:    /tmp/reac_f.qcin
+partmpdirs =  
+#
+# parallel setting
+#
+QCRSH:           ssh
+QCMPI:           mpich
+QCMPIRUN:        /programs/x86_64/lib/qchem-4.3.2/bin/mpi/mpirun_qchem
+QCMACHINEFILE:   /var/spool/torque/aux//113129.vali
+bt2600-16
+
+#
+# env setting
+#
+exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+rm: cannot remove '/data/emavera/rp_qchem/nosolvent/prod/B3lyp/PI10919': No such file or directory
+copy savedir ...
+
+real	143m58.766s
+user	134m29.438s
+sys	9m32.152s

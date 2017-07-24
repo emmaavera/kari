@@ -1,0 +1,55 @@
+bt2600-11
+Tue Jun  6 10:02:06 EDT 2017
+qchem job: ts_solv_wo03.qcin - Running at Tue Jun  6 10:02:06 EDT 2017
+ts_solv_wo03.qcin
+You are running Q-Chem version: 4.3
+withsave === 1
+
+#
+# job setting
+#
+local host:  bt2600-11
+current dir: /data/emavera/rp_qchem/ts/solv/ts_freq
+input file:  ts_solv_wo03.qcin
+output file: ts_solv_wo03.qcin.out
+nprocs     : 1
+nthreads   : 1
+#
+# qchem installation setting
+#
+QC:          /programs/x86_64/lib/qchem-4.3.2
+QCAUX:       /programs/x86_64/lib/qchem-4.3.2/qcaux
+QCPROG:      /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe
+QCPROG_S:    /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe_s
+PARALLEL:    -DPARALLEL
+QCMPI:       mpich
+#
+# qchem directory setting
+#
+qcrun:       ts_solv_wo03.qcin
+QCSCRATCH:   /data/scratch/qchem-scratch
+QCLOCALSCR:  /tmp
+QCTMPDIR:    /tmp
+QCFILEPREF:  /tmp/ts_solv_wo03.qcin
+QCSAVEDIR:   /data/scratch/qchem-scratch/ts_solv_wo03.qcin
+workdirs:    /tmp/ts_solv_wo03.qcin
+workdir0:    /tmp/ts_solv_wo03.qcin
+partmpdirs =  
+#
+# parallel setting
+#
+QCRSH:           ssh
+QCMPI:           mpich
+QCMPIRUN:        /programs/x86_64/lib/qchem-4.3.2/bin/mpi/mpirun_qchem
+QCMACHINEFILE:   /var/spool/torque/aux//119438.vali
+bt2600-11
+
+#
+# env setting
+#
+exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+copy savedir ...
+
+real	555m35.137s
+user	492m59.450s
+sys	63m25.214s

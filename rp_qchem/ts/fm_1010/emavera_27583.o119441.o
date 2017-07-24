@@ -1,0 +1,55 @@
+bt2600-11
+Tue Jun  6 16:35:41 EDT 2017
+qchem job: ts1010.qcin - Running at Tue Jun  6 16:35:41 EDT 2017
+ts1010.qcin
+You are running Q-Chem version: 4.3
+withsave === 1
+
+#
+# job setting
+#
+local host:  bt2600-11
+current dir: /data/emavera/rp_qchem/ts/fm_1010
+input file:  ts1010.qcin
+output file: ts1010.qcin.out
+nprocs     : 1
+nthreads   : 1
+#
+# qchem installation setting
+#
+QC:          /programs/x86_64/lib/qchem-4.3.2
+QCAUX:       /programs/x86_64/lib/qchem-4.3.2/qcaux
+QCPROG:      /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe
+QCPROG_S:    /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe_s
+PARALLEL:    -DPARALLEL
+QCMPI:       mpich
+#
+# qchem directory setting
+#
+qcrun:       ts1010.qcin
+QCSCRATCH:   /data/scratch/qchem-scratch
+QCLOCALSCR:  /tmp
+QCTMPDIR:    /tmp
+QCFILEPREF:  /tmp/ts1010.qcin
+QCSAVEDIR:   /data/scratch/qchem-scratch/ts1010.qcin
+workdirs:    /tmp/ts1010.qcin
+workdir0:    /tmp/ts1010.qcin
+partmpdirs =  
+#
+# parallel setting
+#
+QCRSH:           ssh
+QCMPI:           mpich
+QCMPIRUN:        /programs/x86_64/lib/qchem-4.3.2/bin/mpi/mpirun_qchem
+QCMACHINEFILE:   /var/spool/torque/aux//119441.vali
+bt2600-11
+
+#
+# env setting
+#
+exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+copy savedir ...
+
+real	305m32.488s
+user	281m2.648s
+sys	24m23.005s

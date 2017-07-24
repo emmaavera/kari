@@ -1,0 +1,7 @@
+bt2600-16
+Sun May  7 11:47:10 EDT 2017
+/var/spool/torque/mom_priv/jobs/114834.vali.SC: line 4: sub_ts_solv.sh: command not found
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.002s

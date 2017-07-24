@@ -1,0 +1,400 @@
+REAC
+~~~  HYDRIDIZATION  ~~~
+2-C Bond     | C1-O2
+           --> C1sp2.27d0.01
+           --> O2sp1.71d0.01
+2-C Bond     | C1-O2
+           --> C1sp27.68d0.10
+           --> O2sp53.93d0.11
+2-C Bond     | C1-O3
+           --> C1sp1.99d0.01
+           --> O3sp1.79d0.01
+2-C Bond     | C1-C4
+           --> C1sp1.98d0.00
+           --> C4sp3.15d0.00
+2-C Bond     | C4-C5
+           --> C4sp3.20d0.00
+           --> C5sp2.61d0.00
+2-C Bond     | C4-O6
+           --> C4sp2.45d0.00
+           --> O6sp1.98d0.01
+2-C Bond     | C4-C7
+           --> C4sp3.28d0.00
+           --> C7sp1.65d0.00
+2-C Bond     | C5-H13
+           --> C5sp3.17d0.00
+           --> H13s
+2-C Bond     | C5-H14
+           --> C5sp3.10d0.00
+           --> H14s
+2-C Bond     | C5-H15
+           --> C5sp3.16d0.00
+           --> H15s
+2-C Bond     | C7-O8
+           --> C7sp2.24d0.01
+           --> O8sp1.30d0.01
+2-C Bond     | C7-O8
+           --> C7sp99.99d5.65
+           --> O8sp1.00d0.00
+2-C Bond     | C7-C9
+           --> C7sp2.14d0.00
+           --> C9sp2.70d0.00
+2-C Bond     | C9-H10
+           --> C9sp2.87d0.00
+           --> H10s
+2-C Bond     | C9-H11
+           --> C9sp3.17d0.00
+           --> H11s
+2-C Bond     | C9-H12
+           --> C9sp3.31d0.00
+           --> H12s
+Core         | C1
+           --> sp0.00
+Core         | O2
+           --> sp0.00
+Core         | O3
+           --> sp0.00
+Core         | C4
+           --> sp0.00
+Core         | C5
+           --> sp0.00
+Core         | O6
+           --> sp0.00
+Core         | C7
+           --> sp0.00
+Core         | O8
+           --> sp0.00
+Core         | C9
+           --> sp0.00
+Lone Pair    | O2
+           --> sp0.63d0.00
+Lone Pair    | O2
+           --> sp1.00d0.00
+Lone Pair    | O3
+           --> sp0.62d0.00
+Lone Pair    | O3
+           --> sp99.99d0.43
+Lone Pair    | O3
+           --> sp49.90d0.10
+Lone Pair    | O6
+           --> sp0.50d0.00
+Lone Pair    | O6
+           --> sp1.00d0.00
+Lone Pair    | O6
+           --> sp1.00d0.00
+Lone Pair    | O8
+           --> sp0.77d0.00
+Lone Pair    | O8
+           --> sp99.99d4.49
+Ryd Antibond | C1
+           --> sp1.77d0.29
+Ryd Antibond | C1
+           --> sp12.69d0.60
+Ryd Antibond | C1
+           --> sp0.97d3.20
+Ryd Antibond | C1
+           --> sp1.28d3.32
+Ryd Antibond | C1
+           --> sp11.87d99.99
+Ryd Antibond | C1
+           --> sp15.62d0.66
+Ryd Antibond | C1
+           --> sp0.71d0.36
+Ryd Antibond | C1
+           --> sp0.86d0.20
+Ryd Antibond | C1
+           --> sp1.35d2.05
+Ryd Antibond | C1
+           --> sp0.45d0.83
+Ryd Antibond | C1
+           --> sp37.56d3.83
+Ryd Antibond | C1
+           --> sp3.76d4.23
+Ryd Antibond | C1
+           --> sp4.65d3.19
+Ryd Antibond | C1
+           --> sp0.39d2.20
+Ryd Antibond | O2
+           --> sp1.97d0.01
+Ryd Antibond | O2
+           --> sp99.99d4.20
+Ryd Antibond | O2
+           --> sp0.79d0.03
+Ryd Antibond | O2
+           --> sp1.36d0.09
+Ryd Antibond | O2
+           --> sp1.45d0.20
+Ryd Antibond | O2
+           --> sp5.67d2.47
+Ryd Antibond | O2
+           --> sp4.27d2.99
+Ryd Antibond | O2
+           --> sp0.26d6.49
+Ryd Antibond | O2
+           --> sp99.99d36.79
+Ryd Antibond | O2
+           --> sp0.04d0.16
+Ryd Antibond | O2
+           --> sp4.30d24.32
+Ryd Antibond | O2
+           --> sp0.38d18.90
+Ryd Antibond | O2
+           --> sp30.94d27.82
+Ryd Antibond | O2
+           --> sp6.18d24.11
+Ryd Antibond | O3
+           --> sp3.18d0.02
+Ryd Antibond | O3
+           --> sp77.28d1.13
+Ryd Antibond | O3
+           --> sp2.74d0.19
+Ryd Antibond | O3
+           --> sp0.53d0.02
+Ryd Antibond | O3
+           --> sp1.36d0.33
+Ryd Antibond | O3
+           --> sp5.26d2.45
+Ryd Antibond | O3
+           --> sp9.60d5.82
+Ryd Antibond | O3
+           --> sp3.51d0.76
+Ryd Antibond | O3
+           --> sp2.19d7.23
+Ryd Antibond | O3
+           --> sp0.07d0.10
+Ryd Antibond | O3
+           --> sp9.24d49.91
+Ryd Antibond | O3
+           --> sp51.61d99.99
+Ryd Antibond | O3
+           --> sp1.40d5.66
+Ryd Antibond | O3
+           --> sp1.69d67.05
+Ryd Antibond | C4
+           --> sp2.66d0.03
+Ryd Antibond | C4
+           --> sp39.65d8.93
+Ryd Antibond | C4
+           --> sp99.99d62.51
+Ryd Antibond | C4
+           --> sp4.40d2.33
+Ryd Antibond | C4
+           --> sp1.19d1.43
+Ryd Antibond | C4
+           --> sp1.10d0.26
+Ryd Antibond | C4
+           --> sp0.71d1.01
+Ryd Antibond | C4
+           --> sp0.34d2.07
+Ryd Antibond | C4
+           --> sp2.00d12.54
+Ryd Antibond | C4
+           --> sp29.31d99.99
+Ryd Antibond | C4
+           --> sp21.85d7.50
+Ryd Antibond | C4
+           --> sp4.17d2.19
+Ryd Antibond | C4
+           --> sp99.99d99.99
+Ryd Antibond | C4
+           --> sp0.02d0.01
+Ryd Antibond | C5
+           --> sp0.52d0.01
+Ryd Antibond | C5
+           --> sp8.21d0.60
+Ryd Antibond | C5
+           --> sp5.93d0.21
+Ryd Antibond | C5
+           --> sp2.75d0.76
+Ryd Antibond | C5
+           --> sp6.50d3.50
+Ryd Antibond | C5
+           --> sp0.67d0.87
+Ryd Antibond | C5
+           --> sp24.56d32.09
+Ryd Antibond | C5
+           --> sp2.76d1.37
+Ryd Antibond | C5
+           --> sp6.23d0.71
+Ryd Antibond | C5
+           --> sp3.80d9.22
+Ryd Antibond | C5
+           --> sp16.38d99.99
+Ryd Antibond | C5
+           --> sp12.57d20.05
+Ryd Antibond | C5
+           --> sp0.97d28.45
+Ryd Antibond | C5
+           --> sp0.07d0.02
+Ryd Antibond | O6
+           --> sp9.42d0.09
+Ryd Antibond | O6
+           --> sp58.58d0.78
+Ryd Antibond | O6
+           --> sp0.39d0.04
+Ryd Antibond | O6
+           --> sp6.88d0.65
+Ryd Antibond | O6
+           --> sp15.12d0.98
+Ryd Antibond | O6
+           --> sp4.76d0.21
+Ryd Antibond | O6
+           --> sp2.08d0.47
+Ryd Antibond | O6
+           --> sp0.78d0.03
+Ryd Antibond | O6
+           --> sp1.48d12.67
+Ryd Antibond | O6
+           --> sp8.31d99.99
+Ryd Antibond | O6
+           --> sp25.30d99.99
+Ryd Antibond | O6
+           --> sp0.04d0.05
+Ryd Antibond | O6
+           --> sp20.48d99.99
+Ryd Antibond | O6
+           --> sp2.97d87.22
+Ryd Antibond | C7
+           --> sp4.17d0.02
+Ryd Antibond | C7
+           --> sp3.97d1.27
+Ryd Antibond | C7
+           --> sp5.77d1.05
+Ryd Antibond | C7
+           --> sp0.50d0.47
+Ryd Antibond | C7
+           --> sp9.25d4.03
+Ryd Antibond | C7
+           --> sp1.32d6.29
+Ryd Antibond | C7
+           --> sp2.68d9.72
+Ryd Antibond | C7
+           --> sp1.18d1.76
+Ryd Antibond | C7
+           --> sp1.06d3.17
+Ryd Antibond | C7
+           --> sp12.17d3.90
+Ryd Antibond | C7
+           --> sp0.22d0.61
+Ryd Antibond | C7
+           --> sp22.04d6.18
+Ryd Antibond | C7
+           --> sp0.72d0.87
+Ryd Antibond | C7
+           --> sp0.73d1.84
+Ryd Antibond | O8
+           --> sp10.60d0.11
+Ryd Antibond | O8
+           --> sp5.20d0.09
+Ryd Antibond | O8
+           --> sp0.60d0.05
+Ryd Antibond | O8
+           --> sp6.02d0.35
+Ryd Antibond | O8
+           --> sp2.88d0.67
+Ryd Antibond | O8
+           --> sp69.62d7.96
+Ryd Antibond | O8
+           --> sp41.81d4.26
+Ryd Antibond | O8
+           --> sp0.10d0.29
+Ryd Antibond | O8
+           --> sp0.19d2.75
+Ryd Antibond | O8
+           --> sp1.55d15.67
+Ryd Antibond | O8
+           --> sp0.13d0.49
+Ryd Antibond | O8
+           --> sp11.43d50.75
+Ryd Antibond | O8
+           --> sp1.32d8.33
+Ryd Antibond | O8
+           --> sp20.99d99.99
+Ryd Antibond | C9
+           --> sp0.82d0.00
+Ryd Antibond | C9
+           --> sp6.71d0.23
+Ryd Antibond | C9
+           --> sp3.20d0.09
+Ryd Antibond | C9
+           --> sp15.56d1.64
+Ryd Antibond | C9
+           --> sp9.09d2.09
+Ryd Antibond | C9
+           --> sp1.41d4.70
+Ryd Antibond | C9
+           --> sp1.86d1.03
+Ryd Antibond | C9
+           --> sp6.15d8.39
+Ryd Antibond | C9
+           --> sp37.14d8.06
+Ryd Antibond | C9
+           --> sp1.35d9.45
+Ryd Antibond | C9
+           --> sp0.07d0.01
+Ryd Antibond | C9
+           --> sp3.23d42.56
+Ryd Antibond | C9
+           --> sp0.80d13.00
+Ryd Antibond | C9
+           --> sp0.49d1.19
+Ryd Antibond | H10
+           --> s
+Ryd Antibond | H11
+           --> s
+Ryd Antibond | H12
+           --> s
+Ryd Antibond | H13
+           --> s
+Ryd Antibond | H14
+           --> s
+Ryd Antibond | H15
+           --> s
+2-C Antibond | C1-O2
+           --> C1sp2.27d0.01
+           --> O2sp1.71d0.01
+2-C Antibond | C1-O2
+           --> C1sp27.68d0.10
+           --> O2sp53.93d0.11
+2-C Antibond | C1-O3
+           --> C1sp1.99d0.01
+           --> O3sp1.79d0.01
+2-C Antibond | C1-C4
+           --> C1sp1.98d0.00
+           --> C4sp3.15d0.00
+2-C Antibond | C4-C5
+           --> C4sp3.20d0.00
+           --> C5sp2.61d0.00
+2-C Antibond | C4-O6
+           --> C4sp2.45d0.00
+           --> O6sp1.98d0.01
+2-C Antibond | C4-C7
+           --> C4sp3.28d0.00
+           --> C7sp1.65d0.00
+2-C Antibond | C5-H13
+           --> C5sp3.17d0.00
+           --> H13s
+2-C Antibond | C5-H14
+           --> C5sp3.10d0.00
+           --> H14s
+2-C Antibond | C5-H15
+           --> C5sp3.16d0.00
+           --> H15s
+2-C Antibond | C7-O8
+           --> C7sp2.24d0.01
+           --> O8sp1.30d0.01
+2-C Antibond | C7-O8
+           --> C7sp99.99d5.65
+           --> O8sp1.00d0.00
+2-C Antibond | C7-C9
+           --> C7sp2.14d0.00
+           --> C9sp2.70d0.00
+2-C Antibond | C9-H10
+           --> C9sp2.87d0.00
+           --> H10s
+2-C Antibond | C9-H11
+           --> C9sp3.17d0.00
+           --> H11s
+2-C Antibond | C9-H12
+           --> C9sp3.31d0.00
+           --> H12s

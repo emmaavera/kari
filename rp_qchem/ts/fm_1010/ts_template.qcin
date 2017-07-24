@@ -1,0 +1,80 @@
+$comment
+Title
+$end
+
+$molecule
+   -2 1
+   C         3.498        -1.321          2.640
+   O         4.603        -1.547          2.091
+   O         3.149        -1.614          3.838
+   C         2.409        -0.623          1.832
+   C         2.027        -2.001          0.324
+   O         1.280        -0.399          2.450
+   C         2.530         0.006          0.476
+   O         1.496         0.656          0.008
+   C         3.746         0.179         -0.365
+   H         3.417        -0.086         -1.495
+   H         4.571        -0.479          0.001
+   H         4.028         1.298         -0.262
+   H         1.096        -1.892         -0.319
+   H         1.822        -2.661          1.218
+   H         3.008        -2.234         -0.198
+$end
+
+
+$solvent
+CavityRadius    30
+Dielectric     78.39
+$end
+
+$molecule
+READ
+$end
+
+$rem
+jobtype          FREQ
+exchange         b3lyp
+basis            6-31+G(d)
+pdb_print 2
+SOLVENT_METHOD ONSAGER
+NBO TRUE
+$end
+
+@@@
+
+$molecule
+READ
+$end
+
+$solvent
+CavityRadius    30
+Dielectric     78.39
+$end
+
+$rem
+SOLVENT_METHOD ONSAGER
+jobtype          TS
+exchange         b3lyp
+basis            6-31+G(d)
+geom_opt_maxcyc  100
+$end
+
+@@@
+
+$solvent
+CavityRadius    30
+Dielectric     78.39
+$end
+
+$molecule
+READ
+$end
+
+$rem
+jobtype          FREQ
+exchange         b3lyp
+basis            6-31+G(d)
+pdb_print 2
+NBO TRUE
+SOLVENT_METHOD ONSAGER
+$end

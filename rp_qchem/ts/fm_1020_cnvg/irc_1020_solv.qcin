@@ -1,0 +1,49 @@
+$comment
+TS Frame 1020 converged, trying to find the RPATH now
+$end
+
+$molecule
+-2 1
+C 
+O  1 1.266166
+C  1 1.501701 2 121.942692
+O  3 1.253523 1 124.466424 2 2.481059 0
+C  3 1.535840 1 118.144822 2 -171.911579 0
+H  5 1.092857 3 113.598303 1 -18.094820 0
+H  5 1.099114 3 108.067065 1 101.564700 0
+H  5 1.100575 3 108.683140 1 -140.953714 0
+C  1 1.580999 2 117.021145 3 -157.215339 0
+O  9 1.262592 1 119.509853 2 -76.735683 0
+O  9 1.270833 1 113.491741 2 99.649612 0
+C  1 2.078293 2 107.888271 3 84.219046 0
+H  12 1.092352 1 98.300440 2 -32.861421 0
+H  12 1.092402 1 91.513803 2 81.657851 0
+H  12 1.100580 1 126.448085 2 -159.194350 0
+$end
+
+$rem
+jobtype freq
+basis 6-31+G(d)
+exchange b3lyp
+$end
+
+
+@@@
+$molecule
+READ
+$end
+
+$solvent
+CavityRadius    30
+Dielectric     78.39
+$end
+
+
+$rem
+RPATH_MAX_CYCLES 120
+jobtype rpath
+basis 6-31+G(d)
+exchange b3lyp
+pdb_print 2
+scf_guess read
+$end

@@ -1,0 +1,51 @@
+bt2600-16
+Tue Jun 27 15:20:10 EDT 2017
+qchem job: molden_irc_reac.qcin - Running at Tue Jun 27 15:20:11 EDT 2017
+molden_irc_reac.qcin
+You are running Q-Chem version: 4.3
+withsave === 1
+
+#
+# job setting
+#
+local host:  bt2600-16
+current dir: /data/emavera/rp_qchem/ts/fm_1020_cnvg/molden
+input file:  molden_irc_reac.qcin
+output file: molden_irc_reac.qcin.out
+nprocs     : 1
+nthreads   : 1
+#
+# qchem installation setting
+#
+QC:          /programs/x86_64/lib/qchem-4.3.2
+QCAUX:       /programs/x86_64/lib/qchem-4.3.2/qcaux
+QCPROG:      /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe
+QCPROG_S:    /programs/x86_64/lib/qchem-4.3.2/exe/qcprog.exe_s
+PARALLEL:    -DPARALLEL
+QCMPI:       mpich
+#
+# qchem directory setting
+#
+qcrun:       molden_irc_reac.qcin
+QCSCRATCH:   /data/scratch/qchem-scratch
+QCLOCALSCR:  /tmp
+QCTMPDIR:    /tmp
+QCFILEPREF:  /tmp/molden_irc_reac.qcin
+QCSAVEDIR:   /data/scratch/qchem-scratch/molden_irc_reac.qcin
+workdirs:    /tmp/molden_irc_reac.qcin
+workdir0:    /tmp/molden_irc_reac.qcin
+partmpdirs =  
+#
+# parallel setting
+#
+QCRSH:           ssh
+QCMPI:           mpich
+QCMPIRUN:        /programs/x86_64/lib/qchem-4.3.2/bin/mpi/mpirun_qchem
+QCMACHINEFILE:   /var/spool/torque/aux//123222.vali
+bt2600-16
+
+#
+# env setting
+#
+exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE
+=>> PBS: job killed: walltime 705630 exceeded limit 705600

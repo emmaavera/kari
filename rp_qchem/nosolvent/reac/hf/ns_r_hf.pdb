@@ -1,0 +1,15 @@
+ATOM      1  C   RES     1       1.188   0.276   0.387                 C
+ATOM      2  O   RES     1       0.950   0.972   1.396                 O
+ATOM      3  O   RES     1       2.251   0.267  -0.259                 O
+ATOM      4  C   RES     1       0.018  -0.670  -0.090                 C
+ATOM      5  C   RES     1       0.056  -0.798  -1.654                 C
+ATOM      6  O   RES     1       0.059  -1.873   0.471                 O
+ATOM      7  C   RES     1      -1.303   0.112   0.181                 C
+ATOM      8  O   RES     1      -2.304  -0.353   0.662                 O
+ATOM      9  C   RES     1      -1.395   1.573  -0.288                 C
+ATOM     10  H   RES     1      -2.218   1.654  -1.000                 H
+ATOM     11  H   RES     1      -0.486   1.944  -0.739                 H
+ATOM     12  H   RES     1      -1.624   2.188   0.574                 H
+ATOM     13  H   RES     1      -0.778  -1.426  -1.968                 H
+ATOM     14  H   RES     1       0.985  -1.295  -1.900                 H
+ATOM     15  H   RES     1       0.021   0.145  -2.205                 H
