@@ -367,7 +367,6 @@ def delt(reac_file, ts_file, prod_file):
 	prod_energy = ""
 
 	while (i < len(ts)): #ts is longest file
-		print i
 		if ts[i][0] == " ":
 			i+=1
 		else:
@@ -384,10 +383,10 @@ def delt(reac_file, ts_file, prod_file):
 			is_val = 0
 			while (j<len(reac)):
 				energy_ts = float(ts[i][40:].strip())
-				info[3].append(energy_ts)
+				info[3].append(str(energy_ts))
 				if bt in reac[j] and atoms in reac[j]:
 					energy_reac = float(reac[j][40:].strip())
-					info[2].append(energy_reac)
+					info[2].append(str(energy_reac))
 					info[5].append(str(energy_ts - energy_reac))
 					info[6].append(str(100*(energy_ts - energy_reac)/energy_reac))
 					is_val = 1
@@ -395,13 +394,14 @@ def delt(reac_file, ts_file, prod_file):
 			if is_val == 0:
 				info[2].append("N/A")				
 				info[5].append("N/A")
+				info[6].append("N/A")
 			#search for same bond in prod
 			k = 0
 			is_val = 0			
 			while (k<len(prod)):
 				if bt in prod[k] and atoms in prod[k]:
 					energy_prod = float(prod[k][40:].strip())
-					info[4].append(energy_prod)
+					info[4].append(str(energy_prod))
 					info[7].append(str(energy_prod - energy_ts))
 					info[8].append(str(100*(energy_prod - energy_ts)/energy_ts))
 					is_val = 1
@@ -409,16 +409,17 @@ def delt(reac_file, ts_file, prod_file):
 			if is_val == 0:
 				info[4].append("N/A")
 				info[7].append("N/A")
+				info[8].append("N/A")
 			i+=1
 	info = zip(*info)
-	text_file = open("energy_synth.txt", "w")
+	text_file = open("energy_delta.txt", "w")
 	text_file.write(ret_2D(info))
 	text_file.close()
 
 #print npa_summary_matrix("reac/reac_nbo.qcin.out")
 npa_data_by_orbital_type("reac/reac_nbo.qcin.out", "ts/ts_nbo.qcin.out", "prod/prod_nbo.qcin.out", "VALENCE")
 
-'''
+
 print "---  NPA                                             ---"
 print "***  print_orbitals for irc_reac, irc, ts, and prod  ***"
 print_orbitals("irc_reac/irc_reac_nbo_with_charge.qcin.out", "irc_reac")
@@ -443,5 +444,5 @@ print "***  print_energy complete!                          ***"
 print "***  delt                                            ***"
 delt("energy_reac.txt", "energy_ts.txt", "energy_prod.txt")
 print "***  delt complete!                                  ***"
-'''
+
 
