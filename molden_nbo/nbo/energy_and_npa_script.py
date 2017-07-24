@@ -341,8 +341,13 @@ def delt(reac_file, ts_file, prod_file):
 	info = []
 	info.append(["BOND TYPE"])      #0
 	info.append(["ATOMS"])          #1
-	info.append(["DEL_E (R->TS)"])	#2
-	info.append(["DEL_E (TS->P)"])  #3
+	info.append(["R"])				#2
+	info.append(["TS"])				#3
+	info.append(["P"])				#4
+	info.append(["TS-R"])			#2 --> 5
+	info.append(["% CHANGE"])		#6
+	info.append(["P-TS"])  			#3 --> 7
+	info.append(["% CHANGE"])		#8
 
 	f = open(reac_file, 'r')
 	reac = f.readlines() #returns list of lines read
@@ -372,25 +377,38 @@ def delt(reac_file, ts_file, prod_file):
 			info[0].append(bt) #add bond type
 			info[1].append(atoms)
 			#search for same bond in reac
+			energy_reac = 0
+			energy_ts = 0
+			energy_prod =0
 			j = 0
 			is_val = 0
 			while (j<len(reac)):
+				energy_ts = float(ts[i][40:].strip())
+				info[3].append(energy_ts)
 				if bt in reac[j] and atoms in reac[j]:
-					info[2].append(str(float(ts[i][40:].strip())-float(reac[j][40:].strip())))
+					energy_reac = float(reac[j][40:].strip())
+					info[2].append(energy_reac)
+					info[5].append(str(energy_ts - energy_reac))
+					info[6].append(str(100*(energy_ts - energy_reac)/energy_reac))
 					is_val = 1
 				j+=1
 			if is_val == 0:
-				info[2].append("N/A")
+				info[2].append("N/A")				
+				info[5].append("N/A")
 			#search for same bond in prod
 			k = 0
 			is_val = 0			
 			while (k<len(prod)):
 				if bt in prod[k] and atoms in prod[k]:
-					info[3].append(str(float(prod[k][40:].strip())-float(ts[i][40:].strip())))
+					energy_prod = float(prod[k][40:].strip())
+					info[4].append(energy_prod)
+					info[7].append(str(energy_prod - energy_ts))
+					info[8].append(str(100*(energy_prod - energy_ts)/energy_ts))
 					is_val = 1
 				k+=1
 			if is_val == 0:
-				info[3].append("N/A")
+				info[4].append("N/A")
+				info[7].append("N/A")
 			i+=1
 	info = zip(*info)
 	text_file = open("energy_synth.txt", "w")

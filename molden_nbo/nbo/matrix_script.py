@@ -94,7 +94,7 @@ def occupancy_changes(occupancy_data, col_wid):
 
 			if (r_is_num):
 				delta[4].append(ts_occ-reac_occ)
-				delta[5].append((ts_occ-reac_occ)/reac_occ)
+				delta[5].append(100*(ts_occ-reac_occ)/reac_occ)
 			else:
 				delta[4].append("N/A")
 				delta[5].append("N/A")
@@ -102,7 +102,7 @@ def occupancy_changes(occupancy_data, col_wid):
 
 			if (p_is_num):
 				delta[6].append(prod_occ-ts_occ)
-				delta[7].append((prod_occ-ts_occ)/ts_occ)
+				delta[7].append(100*(prod_occ-ts_occ)/ts_occ)
 			else:
 				delta[6].append("N/A")
 				delta[7].append("N/A")
