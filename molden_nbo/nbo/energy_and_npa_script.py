@@ -419,10 +419,10 @@ def delt(reac_file, ts_file, prod_file):
 #print npa_summary_matrix("reac/reac_nbo.qcin.out")
 npa_data_by_orbital_type("reac/reac_nbo.qcin.out", "ts/ts_nbo.qcin.out", "prod/prod_nbo.qcin.out", "VALENCE")
 
-
+'''
 print "---  NPA                                             ---"
 print "***  print_orbitals for irc_reac, irc, ts, and prod  ***"
-print_orbitals("irc_reac/irc_reac_nbo_with_charge.qcin.out", "irc_reac")
+print_orbitals("irc_reac/irc_reac_nbo_with_charge.qcin.out", "irc_9reac")
 print_orbitals("reac/reac_nbo.qcin.out", "reac")
 print_orbitals("ts/ts_nbo.qcin.out", "ts")
 print_orbitals("prod/prod_nbo.qcin.out", "prod")
@@ -444,5 +444,5 @@ print "***  print_energy complete!                          ***"
 print "***  delt                                            ***"
 delt("energy_reac.txt", "energy_ts.txt", "energy_prod.txt")
 print "***  delt complete!                                  ***"
-
+'''
 
