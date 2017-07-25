@@ -88,8 +88,51 @@ def npa_data_by_orbital_type(reac_file, ts_file, prod_file, bond_type):
 		i+=1
 
 	reac_data = bucket[0]
-	ts_data = bucket[1]
-	prod_data = bucket[2]
+	focus_index = 0
+	try:
+		focus_index = reac_data[0].index(bond_type)
+	except:
+		print "The bond type you have entered is invalid.  Try one of the following:" 
+		print reac_data[0]
+		return
+	#write to file
+	reac_data = zip(*bucket[0])
+	ts_data = zip(*bucket[1])
+	prod_data = zip(*bucket[2])
+	output = []
+	output.append(reac_data[0]) #atoms
+	output.append(reac_data[focus_index])
+	output.append(ts_data[focus_index])
+	output.append(prod_data[focus_index])
+	output = zip(*output)
+	i = 0
+	while i < len(output):
+		output[i] = list(output[i])
+		i+=1
+
+	output[0].append("TS - REAC")
+	output[0].append("% CHANGE")
+	output[0].append("PROD - TS")
+	output[0].append("% CHANGE")
+	#find these vals
+	i = 1
+	while i < len(output):
+		reac_val = float(output[i][1])
+		ts_val = float(output[i][2])
+		prod_val = float(output[i][3])
+		output[i].append(str(ts_val - reac_val))
+		output[i].append(str(100*(ts_val - reac_val)/reac_val))
+		output[i].append(str(prod_val - ts_val))
+		output[i].append(str(100*(prod_val - ts_val)/ts_val))
+		i += 1
+	text_file = open("atom_npa_"+bond_type+".txt", "w")
+	text_file.write(ret_2D(output))
+	text_file.close()
+
+
+
+
+
 
 def print_orbitals(file, output_name):
 	#output = "~~~  HYDRIDIZATION  ~~~\n"
@@ -417,7 +460,12 @@ def delt(reac_file, ts_file, prod_file):
 	text_file.close()
 
 #print npa_summary_matrix("reac/reac_nbo.qcin.out")
+npa_data_by_orbital_type("reac/reac_nbo.qcin.out", "ts/ts_nbo.qcin.out", "prod/prod_nbo.qcin.out", "CHARGE")
 npa_data_by_orbital_type("reac/reac_nbo.qcin.out", "ts/ts_nbo.qcin.out", "prod/prod_nbo.qcin.out", "VALENCE")
+npa_data_by_orbital_type("reac/reac_nbo.qcin.out", "ts/ts_nbo.qcin.out", "prod/prod_nbo.qcin.out", "RYDBERG")
+npa_data_by_orbital_type("reac/reac_nbo.qcin.out", "ts/ts_nbo.qcin.out", "prod/prod_nbo.qcin.out", "TOTAL")
+npa_data_by_orbital_type("reac/reac_nbo.qcin.out", "ts/ts_nbo.qcin.out", "prod/prod_nbo.qcin.out", "CORE")
+
 
 '''
 print "---  NPA                                             ---"

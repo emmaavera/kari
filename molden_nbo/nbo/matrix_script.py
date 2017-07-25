@@ -16,7 +16,6 @@ def array_2d_to_string(array_2d, col_wid):
 	return output
 
 '''
-FIRST VERSION DOES NOT WORK
 Print out changes in orbital occupancy (data drawn from "Bond orbital/ 
 Coefficients/ Hybrids") and note changes in the following manner:
 Bond Occupancy Changes for BD, BD*, and LP
@@ -63,8 +62,6 @@ def occupancy_changes(occupancy_data, col_wid):
 
 	bond_id = ""
 	atom_id = ""
-	#print "HI MY NAME IS PROD \n\n\n\n" 
-	#print prod
 	while i < len(ts[0]):
 		#collect information from the bond looking for...
 		bond_id = ts[0][i]
@@ -170,10 +167,6 @@ def populate_occupancy_matrix(file_first, file_second, file_third, col_wid):
 	matrix[2].append(populate_occupancy_matrix_column(file_third))
 	output += space('REAC', col_wid) + space('TS', col_wid) + space('PROD', col_wid) + "\n"
 	i = 0
-	'''
-	print "MATRIX:\n"
-	print matrix[0][1][1]
-	'''
 	while i < len(matrix[0][1][0]): #matrix[0][1] gives list of len three B-type, atoms, and occ
 		for j in range(0,3):
 			for k in range(0,3):
