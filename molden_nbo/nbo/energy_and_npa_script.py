@@ -32,11 +32,11 @@ def npa_summary_matrix(file):
 						i = len(x)
 					else:
 						data[0].append(x[i][4:9])
-						data[1].append(x[i][12:19])
-						data[2].append(x[i][25:32])
-						data[3].append(x[i][37:44])
-						data[4].append(x[i][48:55])
-						data[5].append(x[i][60:67])
+						data[1].append(x[i][11:19])
+						data[2].append(x[i][24:32])
+						data[3].append(x[i][36:44])
+						data[4].append(x[i][47:55])
+						data[5].append(x[i][59:67])
 						i+=1
 		else:
 			i+=1
@@ -47,7 +47,9 @@ file name will indicate bond type
 '''
 def npa_data_by_orbital_type(reac_file, ts_file, prod_file, bond_type):
 	reac_data = zip(*npa_summary_matrix(reac_file))
+	print reac_data
 	ts_data = zip(*npa_summary_matrix(ts_file))
+	print ts_data
 	prod_data = zip(*npa_summary_matrix(prod_file))
 	#sort them use zip(*output)
 	#note that zip(*my_list) will return a list of tuples, which are IMMUTABLE
@@ -121,9 +123,15 @@ def npa_data_by_orbital_type(reac_file, ts_file, prod_file, bond_type):
 		ts_val = float(output[i][2])
 		prod_val = float(output[i][3])
 		output[i].append(str(ts_val - reac_val))
-		output[i].append(str(100*(ts_val - reac_val)/reac_val))
+		if reac_val == 0:
+			output[i].append('division by zero')
+		else:
+			output[i].append(str(100*(ts_val - reac_val)/reac_val))
 		output[i].append(str(prod_val - ts_val))
-		output[i].append(str(100*(prod_val - ts_val)/ts_val))
+		if ts_val == 0:
+			output[i].append('division by zero')
+		else:
+			output[i].append(str(100*(prod_val - ts_val)/ts_val))
 		i += 1
 	text_file = open("atom_npa_"+bond_type+".txt", "w")
 	text_file.write(ret_2D(output))
